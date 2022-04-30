@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { FirstPageComponent } from './pages/first-page/first-page.component';
 import { SecondPageComponent } from './pages/second-page/second-page.component';
 import { DataTablePageComponent } from './pages/data-table-page/data-table-page.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,7 @@ import { DataTablePageComponent } from './pages/data-table-page/data-table-page.
     SecondPageComponent,
     DataTablePageComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })

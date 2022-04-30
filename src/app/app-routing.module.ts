@@ -5,8 +5,8 @@ import { SecondPageComponent } from './pages/second-page/second-page.component';
 import { DataTablePageComponent } from './pages/data-table-page/data-table-page.component';
 
 const routes: Routes = [
-  { path: 'first', component: FirstPageComponent },
-  { path: 'second', component: SecondPageComponent },
+  { path: 'first', component: FirstPageComponent, data: {animation : 'HomePage'}},
+  { path: 'second', component: SecondPageComponent, data: {animation : 'AboutPage'} },
   { path: 'data-table', component: DataTablePageComponent },
   {
     path: 'lazy',

@@ -8,5 +8,6 @@
     <li><a href="https://angular.io/">external</a></li>
   </ul>
 </header>
-
-<router-outlet></router-outlet>
+<main [@routeAnimations]="getRouteAnimationData(outlet)">
+  <router-outlet #outlet="outlet"></router-outlet>
+</main>
