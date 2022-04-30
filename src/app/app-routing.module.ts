@@ -8,6 +8,11 @@ const routes: Routes = [
   { path: 'first', component: FirstPageComponent },
   { path: 'second', component: SecondPageComponent },
   { path: 'data-table', component: DataTablePageComponent },
+  {
+    path: 'lazy',
+    loadChildren: () =>
+      import('./modules/lazy/lazy.module').then((m) => m.LazyModule),
+  },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
